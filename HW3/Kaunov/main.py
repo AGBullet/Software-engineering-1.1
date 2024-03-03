@@ -16,7 +16,6 @@ def root():
     return {"message": "Hello World"}
 
 
-
 @app.post("/translate/")
 def translate(item: Item):
     return translator(item.text)[0]
